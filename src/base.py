@@ -10,13 +10,13 @@ file_path = "sales.csv"
 
 # Load the latest version
 df = kagglehub.dataset_load(
-  KaggleDatasetAdapter.PANDAS,
-  "sudipmanchare/simulated-sales-data-with-timeseries-features",
-  file_path,
-  # Provide any additional arguments like 
-  # sql_query or pandas_kwargs. See the 
-  # documenation for more information:
-  # https://github.com/Kaggle/kagglehub/blob/main/README.md#kaggledatasetadapterpandas
+    KaggleDatasetAdapter.PANDAS,
+    "sudipmanchare/simulated-sales-data-with-timeseries-features",
+    file_path,
+    # Provide any additional arguments like
+    # sql_query or pandas_kwargs. See the
+    # documenation for more information:
+    # https://github.com/Kaggle/kagglehub/blob/main/README.md#kaggledatasetadapterpandas
 )
 
 print("First 5 records:", df.head())
